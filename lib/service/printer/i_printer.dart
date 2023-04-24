@@ -1,7 +1,8 @@
 import 'dart:io';
 
-/// The Printer class is an abstract class that provides the printFileSystemEntity method
-/// to be implemented by subclasses for printing the file system entities.
+/// The Printer class is an abstract class that provides the
+/// printFileSystemEntity method to be implemented by subclasses for printing
+/// the file system entities.
 abstract class IPrinter {
   /// Private constructor to prevent getting an instance from this interface.
   const IPrinter._();

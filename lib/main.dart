@@ -1,21 +1,19 @@
-import 'dart:io';
-import 'printer/directory_printer.dart';
-import 'package:flutter/foundation.dart';
-import 'directory_traversal/directory_traversal.dart';
-
-const path = 'C:/Users/sheha/StudioProjects/design_patterns/lib';
+import 'presentation/directory/directory_picker.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  final directory = Directory(path);
+  runApp(const MyApp());
+}
 
-  final traversal = DirectoryTraversal(
-    root: directory,
-    printer: const DirectoryPrinter(shouldShowSymbols: false),
-  );
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-  final text = traversal.traverseDirectory().trimRight();
-
-  if (kDebugMode) {
-    print('\n$text');
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
+      home: const DirectoryPickerView(),
+    );
   }
 }

@@ -30,10 +30,10 @@ class DirectoryPrinter implements IPrinter {
       final symbol = isDirectory && shouldShowSymbols ? '>' : '+';
 
       // Set the color based on whether the file is a directory or not
-      final color = isDirectory ? '\u001b[32m' : '\u001b[31m';
+      // final color = isDirectory ? '\u001b[32m' : '\u001b[31m';
 
       // Set reset color to ensure no color spillage to subsequent console outputs
-      const resetColor = '\u001b[0m';
+      // const resetColor = '\u001b[0m';
 
       // Add a symbol or space based on whether shouldShowSymbols is set.
       final symbolOrSpace = shouldShowSymbols ? '$symbol ' : '';
@@ -42,8 +42,9 @@ class DirectoryPrinter implements IPrinter {
       final linePrefix = prefix.replaceAll(p.basename(directory.path), '');
 
       // Construct the line to be printed with appropriate formatting
+      // final line = '$linePrefix${isLast ? '└── ' : '├── '}$color$symbolOrSpace$resetColor${isDirectory ? '$fileName/' : fileName}\n';
       final line =
-          '$linePrefix${isLast ? '└── ' : '├── '}$color$symbolOrSpace$resetColor${isDirectory ? '$fileName/' : fileName}\n';
+          '$linePrefix${isLast ? '└── ' : '├── '}$symbolOrSpace${isDirectory ? '$fileName/' : fileName}\n';
 
       text += line;
 

@@ -15,20 +15,3 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
-structural_design_patterns
-└── proxy/
-    proxy
-    ├── i_sms.dart
-    ├── i_sms_quota.dart
-    ├── mobile_phone_sms.dart
-    ├── proxy.dart
-    └── sms_quota.dart
-
-structural_design_patterns
-└── proxy/
-    ├── i_sms.dart
-    ├── i_sms_quota.dart
-    ├── mobile_phone_sms.dart
-    ├── proxy.dart
-    └── sms_quota.dart
