@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shehab.directory_structure_explorer">
    <application
-        android:label="directory_structure_explorer"
+        android:label="Directory Structure Explorer"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -41,7 +41,7 @@ class _DirectoryPickerViewState extends State<DirectoryPickerView> {
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           children: [
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 70.0),
             Row(
               children: [
                 Expanded(
